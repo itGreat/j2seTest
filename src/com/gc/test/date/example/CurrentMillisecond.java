@@ -1,4 +1,4 @@
-package com.gc.test.date;
+package com.gc.test.date.example;
 
 /**
  * 2013-12-26,gongchang

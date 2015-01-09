@@ -1,4 +1,4 @@
-package com.gc.test;
+package com.gc.test.date.util;
 
 import java.text.DateFormat;
 import java.text.ParseException;

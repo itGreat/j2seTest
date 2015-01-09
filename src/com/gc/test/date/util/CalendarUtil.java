@@ -1,4 +1,4 @@
-package com.gc.test.date;
+package com.gc.test.date.util;
 
 import java.util.Calendar;
 import java.util.Date;

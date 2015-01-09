@@ -1,4 +1,4 @@
-package com.gc.test.date;
+package com.gc.test.date.example;
 
 public class TestMonth {
 	public static void main(String[] args) {
