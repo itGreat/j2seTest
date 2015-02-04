@@ -1,5 +1,8 @@
 package com.gc.test.string;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class FormKeyStr {
 	
 	private static void column(int num,int size) {
@@ -30,8 +33,61 @@ public class FormKeyStr {
 //		row(80,5);
 		
 //		row2(389,5,2);
-		row2(652,6,20);
+//		row2(652,6,20);
+		
+		Set<Integer> set = new HashSet<Integer>();
+//		set.add(376);
+//		set.add(377);
+//		set.add(378);
+//		key$(340,354,1,set);
+		
+//		calcResultKey$(25,36,3,set);
+		
+		keyCode(148,153,3,set);
 	}
 
-	
+	private static void calcResultKey$(Integer begin,Integer end,Integer col,Set<Integer> set) {
+		int count = 1;
+		for (int i = begin; i <= end; i++) {
+			if(set.contains(i)){
+				continue;
+			}
+			System.out.print("${"+"calc"+(i)+"} \t");
+			if(count%col==0){
+				System.out.println();
+			}
+			count++;
+		}
+		
+	}
+
+	private static void key$(Integer begin,Integer end,Integer col,Set<Integer> set) {
+		int count = 1;
+		for (int i = begin; i <= end; i++) {
+			if(set.contains(i)){
+				continue;
+			}
+			System.out.print("${"+FormKeyConstants.COIL_GB+(i)+"} \t");
+			if(count%col==0){
+				System.out.println();
+			}
+			count++;
+		}
+	}
+
+	private static void keyCode(Integer begin,Integer end,Integer col,Set<Integer> set) {
+		int count = 7;
+		for (int i = begin; i <= end; i+=col) {
+			if(set.contains(i)){
+				continue;
+			}
+//			System.out.print((i) +" " + (i+1) +" " + (i+2));
+			System.out.print("\"coil_gb"+(i)+"\",\"coil_gb"+(i+1)+"\",\"coil_gb"+(i+2)+"\"");
+			
+//			if(count%col==0){
+				System.out.println();
+//			}
+			count++;
+		}
+	}
 }
