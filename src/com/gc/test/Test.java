@@ -11,7 +11,16 @@ public class Test {
 		//System.out.println(CommentState.normal);
 		
 		//
-		Boolean flag = Test.NORMAL.equals(null);
-		System.out.println(flag);
+		/*Boolean flag = Test.NORMAL.equals(null);
+		System.out.println(flag);*/
+		
+		boolean busy = false;
+		int i=0;
+		while(true){
+			if(busy) i++;
+			else{
+				
+			}
+		}
 	}
 }

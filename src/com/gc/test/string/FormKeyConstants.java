@@ -16,7 +16,7 @@ public class FormKeyConstants {
 	
 	//大类线缆类 前缀：cable//
 	/** 低压电线 (线缆- 低压电线试验作业表单 (有护套）)*/
-	public static final String CABLE_DYDX_HT = "cable_dydx_ht";
+	public static final String CABLE_DX = "cable_dx";
 	
 	/** 低压电线 (线缆- 低压电线试验作业表单 (无护套）)*/
 	public static final String CABLE_DYDX = "cable_dydx";

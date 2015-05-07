@@ -17,6 +17,8 @@ public class BuildArray {
 	
 	public static void main(String[] args) {
 //		System.out.println(Arrays.toString(buildArray("333","4444","897")));
-		System.out.println(6.271 - 6.262);
+//		System.out.println(6.271 - 6.262);
+		Double f = 0.0090000000043;
+	  System.out.println(String.format("%.3f", f));
 	}
 }
