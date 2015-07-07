@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import org.apache.commons.lang3.StringUtils;
 
-public class GcDateUtil extends StringUtils{
+public class MyDateUtil {
 	/**
 	 * 2014-3-2,gongchang
 	 * 功能： 拼接时间html元素
