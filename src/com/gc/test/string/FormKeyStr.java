@@ -17,10 +17,19 @@ public class FormKeyStr {
 		}
 	}
 	
+	/**
+	 * @author gongchang
+	 * 功能：生成表单key
+	 * 参数：
+	 * 		num ：上一个key编号数
+	 * 		col : 生成列数
+	 * 		row : 生成行数
+	 * 时间：2015年3月26日 上午11:57:05
+	 */
 	private static void row2(int num,int col,int row) {
 		int size = (col*row);
 		for (int i = 1; i <= size; i++) {
-			System.out.print(FormKeyConstants.COIL_GB+(num+=1)+"\t");
+			System.out.print(FormKeyConstants.CABLE_DX+(num+=1)+"\t");
 			if(i%col==0){
 				System.out.println();
 			}
@@ -32,8 +41,8 @@ public class FormKeyStr {
 //		column(49,3);
 //		row(80,5);
 		
-//		row2(389,5,2);
-//		row2(652,6,20);
+		row2(197,10,10);
+//		row2(127,6,1);
 		
 		Set<Integer> set = new HashSet<Integer>();
 //		set.add(376);
@@ -43,7 +52,7 @@ public class FormKeyStr {
 		
 //		calcResultKey$(25,36,3,set);
 		
-		keyCode(148,153,3,set);
+//		keyCode(148,153,3,set);
 	}
 
 	private static void calcResultKey$(Integer begin,Integer end,Integer col,Set<Integer> set) {
