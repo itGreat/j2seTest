@@ -1,6 +1,6 @@
 
 -----------------------------------------------
-gzedieip
+gzedieip 门户
 	D:\serverx86\gzedieip\eip-8015
 	服务器59 单点登录、统一用户管理
 	uum
@@ -16,18 +16,22 @@ gzedieip
 	重启tomcat
 
 -----------------------------------------------
-inspect
+inspect 检验
 	D:\serverx86\inspect\inspect-8045
 
 
-zsjd-----------------------------------------------
+zsjd 交单-----------------------------------------------
 	D:\serverx86\zsjd\zsjd-8040
 
-zsoss-----------------------------------------------
+zsoss 号线-----------------------------------------------
 	D:\serverx86\zsoss\zsoss-8042
 	
-gzunicomWZ
+gzunicomWZ 物资
 	D:\serverx86\gzunicomWZ\gzunicomWZ-8018
 	
-	
+webpay	网上续费
 	D:\serverx86\webpay\webpay-8049
+	D:\serverx86\webpay\apache-tomcat-6.0.39-webpay-8050
+	
+gzunicomtel 固网
+	D:\serverx86\gzunicomtel\gzunicomtel-8048
