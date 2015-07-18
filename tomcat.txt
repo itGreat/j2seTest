@@ -35,3 +35,8 @@ webpay	网上续费
 	
 gzunicomtel 固网
 	D:\serverx86\gzunicomtel\gzunicomtel-8048
+	
+buildProject 党建
+	D:\serverx86\buildProject\buildProject-8010_apache-tomcat-6.0.39
+	D:\project\buildProject\WebRoot
+	
