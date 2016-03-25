@@ -1,11 +1,15 @@
 package com.gc.test.qrcode;
 import com.google.zxing.common.BitMatrix; 
     
+
  import javax.imageio.ImageIO; 
- import java.io.File; 
- import java.io.OutputStream; 
- import java.io.IOException; 
- import java.awt.image.BufferedImage; 
+
+import org.apache.commons.lang3.StringUtils;
+
+import java.io.File; 
+import java.io.OutputStream; 
+import java.io.IOException; 
+import java.awt.image.BufferedImage; 
     
     
  public final class MatrixToImageWriter { 
@@ -45,5 +49,44 @@ import com.google.zxing.common.BitMatrix;
        throw new IOException("Could not write an image of format " + format); 
      } 
    } 
+   
+   public static String convertImageToCode(BufferedImage img) {
+		StringBuffer sb = new StringBuffer();
+		long clr = 0, n = 0;
+		int b = 0;
+		for (int i = 0; i < img.getHeight(); i++) {
+			for (int j = 0; j < img.getWidth(); j++) {
+				b = b * 2;
+				clr = img.getRGB(j, i);
+				String s = String.format("%X", clr);
+
+				if (s.substring(s.length() - 6, s.length() - 6 + 6).compareTo(
+						"BBBBBB") < 0) {
+					b++;
+				}
+				n++;
+				if (j == (img.getWidth() - 1)) {
+					if (n < 8) {
+						b = b * (2 ^ (8 - (int) n));
+						sb.append(StringUtils.leftPad(String.format("%X", b),
+								2, "0"));
+						// sb.append(String.format("%X", b).PadLeft(2, '0'));
+						b = 0;
+						n = 0;
+					}
+				}
+				if (n >= 8) {
+					sb.append(StringUtils.leftPad(String.format("%X", b), 2,
+							"0"));
+					// sb.append(String.format("%X", b).PadLeft(2, '0'));
+					b = 0;
+					n = 0;
+				}
+			}
+			sb.append("\n");
+		}
+		return sb.toString();
+
+	}
     
  }

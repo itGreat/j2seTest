@@ -1,4 +1,4 @@
-
+D:\serverx86\test\test-8012
 -----------------------------------------------
 gzedieip 门户
 	D:\serverx86\gzedieip\eip-8015
@@ -18,7 +18,7 @@ gzedieip 门户
 -----------------------------------------------
 inspect 检验
 	D:\serverx86\inspect\inspect-8045
-
+	D:\serverx86\inspect\inspect-8046
 
 zsjd 交单-----------------------------------------------
 	D:\serverx86\zsjd\zsjd-8040
@@ -39,4 +39,23 @@ gzunicomtel 固网
 buildProject 党建
 	D:\serverx86\buildProject\buildProject-8010_apache-tomcat-6.0.39
 	D:\project\buildProject\WebRoot
+
+meeting
+ 	D:\serverx86\meeting\meeting-8047
 	
+GDLT 地税	
+D:\serverx86\GDLT\apache-tomcat-6.0.39-GDLT-8070
+ 
+SLHDemo
+D:\serverx86\SLHDemo\apache-tomcat-6.0.39-SLHDemo-8071
+
+SLHWork
+D:\serverx86\SLHWork\apache-tomcat-6.0.39-SLHWork-8072
+
+GZPRIMA-8018
+D:\serverx86\GZPRIMA\apache-tomcat-6.0.44
+
+------------
+activiti-web
+D:\serverx64\activiti-web\apache-tomcat-6.0.39_activiti-web-9040
+

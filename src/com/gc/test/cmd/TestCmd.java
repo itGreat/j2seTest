@@ -14,10 +14,10 @@ public class TestCmd {
 		//删除在D盘下的新建文本文档.txt
 //		String cmd = "cmd /c del D:\\新建文本文档.txt";
 		
-		
-//		String cmd = "cmd /c notepad";//打开记事本
-		String cmd = "cmd /c sysdm.cpl";//打开系统属性
+		String cmd = "cmd /c notepad";//打开记事本
+//		String cmd = "cmd /c sysdm.cpl";//打开系统属性
+ 
 		Process p = rt.exec(cmd);
-		
+		System.out.println("run over..............");
 	}
 }
