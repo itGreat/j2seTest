@@ -22,12 +22,13 @@ public class Test2 {
 		System.out.println(l);
 		
 		Random r = new Random();
-		
-		for (int i = 0; i < 10000; i++) {
-			long time = (r.nextInt(Integer.MAX_VALUE)*100);
-			Date d = new Date();
-			d.setTime(time);
-			System.out.println(fmt.format(d));
-		}
+//		2147483647
+//		1461139964193
+//		for (int i = 0; i < 10000; i++) {
+//			long time = (r.nextInt(Integer.MAX_VALUE)*100);
+//			Date d = new Date();
+//			d.setTime(time);
+//			System.out.println(fmt.format(d));
+//		}
 	}
 }

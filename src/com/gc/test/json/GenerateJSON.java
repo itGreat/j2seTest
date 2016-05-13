@@ -27,7 +27,13 @@ public class GenerateJSON {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println( generate(new String[]{"inspDevice","inspNum","bugNum","mainBug","bugRate","mainBugRate","sampleName","selfNum","entrustNum","total"},6) );
+		System.out.println( generate(new String[]{"deviceUse","selfNum","outNum","totalNum","selfCompleteRate","outCompleteRate"},3) );
+		
+		/*for (int i = 1; i <= 12; i++) {
+//			System.out.println("{field: 'month"+i+"', title: '"+i+"月', width: 100,sortable: true,align:'center' },");
+//			System.out.print("\"month"+i+"\",");
+		}*/
+		
 	}
 	
 }
